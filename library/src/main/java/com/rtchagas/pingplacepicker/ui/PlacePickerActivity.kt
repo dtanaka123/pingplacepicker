@@ -82,6 +82,7 @@ class PlacePickerActivity : AppCompatActivity(), PingKoinComponent,
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        RxJavaPlugins.setErrorHandler(throwable -> {});
         setContentView(R.layout.activity_place_picker)
 
         // Configure the toolbar
